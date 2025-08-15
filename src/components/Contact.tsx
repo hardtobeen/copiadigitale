@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -13,17 +14,20 @@ const Contact = () => {
     service: '',
     message: ''
   });
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
     console.log('Form submitted:', formData);
   };
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
+
   const contactInfo = [{
     icon: <Phone className="h-6 w-6" />,
     title: "Telefono",
@@ -45,6 +49,7 @@ const Contact = () => {
     value: "+39 333 123 4567",
     action: "https://wa.me/393331234567"
   }];
+
   return <section id="contatti" className="py-16 sm:py-20 bg-gray-900 text-white">
        <div className="container mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
          <div className="text-center mb-12 sm:mb-16">
@@ -96,11 +101,16 @@ const Contact = () => {
                  Azioni rapide
                </h4>
                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <button className="bg-white hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition-colors duration-300 border border-gray-200 text-[#376697]">
-                    prenota una video call
-                  </button>
-               </div>
-             </div>
+                <a 
+                  href="https://calendar.app.google/h5j6fcFdsjHCtE846"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition-colors duration-300 border border-gray-200 text-[#376697] text-center"
+                >
+                  prenota una video call
+                </a>
+              </div>
+            </div>
           </div>
 
            {/* Contact Form */}
@@ -162,4 +172,5 @@ const Contact = () => {
       </div>
     </section>;
 };
+
 export default Contact;
