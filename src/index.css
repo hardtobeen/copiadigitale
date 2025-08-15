@@ -1,0 +1,151 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tech Design System - Colori coerenti e tech-focused */
+
+@layer base {
+  :root {
+    --background: 220 20% 95%;
+    --foreground: 220 25% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 8%;
+
+    --primary: 220 100% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 10% 90%;
+    --secondary-foreground: 220 25% 8%;
+
+    --muted: 220 10% 90%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 180 100% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 85%;
+    --input: 220 20% 85%;
+    --ring: 220 100% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens for better contrast */
+    --navy-deep: 220 25% 8%;
+    --navy-light: 220 20% 15%;
+    --digital-blue: 220 100% 60%;
+    --nav-color: 207 95% 42%;
+    --gradient-digital: linear-gradient(135deg, hsl(220 100% 60%), hsl(180 100% 60%));
+    
+    --sidebar-background: 220 20% 95%;
+    --sidebar-foreground: 220 25% 8%;
+    --sidebar-primary: 220 100% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 10% 90%;
+    --sidebar-accent-foreground: 220 25% 8%;
+    --sidebar-border: 220 20% 85%;
+    --sidebar-ring: 220 100% 60%;
+  }
+
+  .dark {
+    --background: 220 25% 8%;
+    --foreground: 220 20% 95%;
+
+    --card: 220 30% 4%;
+    --card-foreground: 220 20% 95%;
+
+    --popover: 220 30% 4%;
+    --popover-foreground: 220 20% 95%;
+
+    --primary: 220 100% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 220 20% 95%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 180 100% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 220 20% 95%;
+
+    --border: 220 20% 15%;
+    --input: 220 20% 15%;
+    --ring: 220 100% 60%;
+    
+    /* Dark mode custom tokens */
+    --navy-deep: 220 25% 8%;
+    --navy-light: 220 20% 15%;
+    --digital-blue: 220 100% 60%;
+    --gradient-digital: linear-gradient(135deg, hsl(220 100% 60%), hsl(180 100% 60%));
+    
+    --sidebar-background: 220 25% 8%;
+    --sidebar-foreground: 220 20% 95%;
+    --sidebar-primary: 220 100% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 15%;
+    --sidebar-accent-foreground: 220 20% 95%;
+    --sidebar-border: 220 20% 15%;
+    --sidebar-ring: 220 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Nasconde le barre di scorrimento ma mantiene la funzionalità */
+  iframe {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+  
+  iframe::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Chrome/Safari/Webkit */
+  }
+  
+  /* Smooth scrolling per navigazione */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Glass effect utility */
+  .glass {
+    @apply backdrop-blur-xl bg-white/10 border border-white/20;
+  }
+
+  .glass-dark {
+    @apply backdrop-blur-xl bg-black/20 border border-white/10;
+  }
+}
+
+@layer utilities {
+  /* Text shadow utilities per readability */
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  }
+  
+  .text-shadow-xl {
+    text-shadow: 0 6px 12px rgba(0,0,0,0.7);
+  }
+}
