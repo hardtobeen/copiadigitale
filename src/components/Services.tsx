@@ -40,7 +40,7 @@ const Services = () => {
     description: "Utilizziamo droni avanzati per effettuare rilievi e modellazioni 3D in ambienti industriali, anche pericolosi o difficili da raggiungere.",
     gradient: "bg-primary"
   }, {
-    icon: <Building className="h-8 w-8" />,
+    icon: <img src="/lovable-uploads/afa5416b-cad2-4b1f-a321-d00c943724d9.png" alt="Digital Twin" className="h-10 w-10" />,
     title: "Digital Twin (Gemelli Digitali)",
     description: "Creazione di modelli digitali realistici per monitoraggio continuo, manutenzione predittiva e supporto alle decisioni operative.",
     gradient: "bg-primary"
