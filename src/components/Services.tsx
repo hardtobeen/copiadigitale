@@ -30,7 +30,7 @@ const Services = () => {
     description: "Servizi fotografici professionali, motion graphics e contenuti visual per rafforzare la tua immagine aziendale.",
     gradient: "bg-primary"
   }, {
-    icon: <img src="/lovable-uploads/b86d7c99-5eea-475d-abab-6411455e91fe.png" alt="Laser Scanner 3D" className="h-8 w-8" />,
+    icon: <img src="/lovable-uploads/b86d7c99-5eea-475d-abab-6411455e91fe.png" alt="Laser Scanner 3D" className="h-12 w-12" />,
     title: "Apparecchiatura di ultima generazione",
     description: "Siamo rivenditori autorizzati di laser scanner 3D dotati di tecnologia LiDAR. Perfetti per applicazioni in ambito architettonico, ingegneristico e real estate.",
     gradient: "bg-primary"
