@@ -1,5 +1,6 @@
 import { Camera, Globe, MapPin, Monitor, FileText, Video, Plane, Building } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+
 const Services = () => {
   const coreServices = [{
     icon: <Globe className="h-8 w-8" />,
@@ -22,13 +23,14 @@ const Services = () => {
     description: "Gestiamo la tua visibilità su portali come Immobiliare.it, Idealista, YachtWorld e altri. Dalla pubblicazione alla strategia di vendita.",
     gradient: "bg-primary"
   }];
+
   const enhancedServices = [{
     icon: <Camera className="h-8 w-8" />,
     title: "Fotografia & Motion Graphics per Aziende",
     description: "Servizi fotografici professionali, motion graphics e contenuti visual per rafforzare la tua immagine aziendale.",
     gradient: "bg-primary"
   }, {
-    icon: <Video className="h-8 w-8" />,
+    icon: <img src="/lovable-uploads/b86d7c99-5eea-475d-abab-6411455e91fe.png" alt="Laser Scanner 3D" className="h-8 w-8" />,
     title: "Apparecchiatura di ultima generazione",
     description: "Siamo rivenditori autorizzati di laser scanner 3D dotati di tecnologia LiDAR. Perfetti per applicazioni in ambito architettonico, ingegneristico e real estate.",
     gradient: "bg-primary"
@@ -43,6 +45,7 @@ const Services = () => {
     description: "Creazione di modelli digitali realistici per monitoraggio continuo, manutenzione predittiva e supporto alle decisioni operative.",
     gradient: "bg-primary"
   }];
+
   return <section id="servizi" className="py-12 xs:py-16 sm:py-20 lg:py-24 xl:py-28 bg-white relative overflow-hidden">
        <div className="container mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 relative">
          <div className="text-center mb-10 xs:mb-12 sm:mb-16 lg:mb-20">
@@ -66,7 +69,8 @@ const Services = () => {
            </div>
 
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-             {coreServices.map((service, index) => <div key={index} className="group bg-blue-50 p-6 sm:p-8 text-center rounded-lg hover:bg-blue-100 transition-all duration-300">
+             {coreServices.map((service, index) => (
+               <div key={index} className="group bg-blue-50 p-6 sm:p-8 text-center rounded-lg hover:bg-blue-100 transition-all duration-300">
                  <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-tech-primary mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg bg-[#0571d3]">
                    <div className="text-white scale-75 sm:scale-100">
                      {service.icon}
@@ -78,7 +82,8 @@ const Services = () => {
                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                    {service.description}
                  </p>
-               </div>)}
+               </div>
+             ))}
            </div>
          </div>
 
@@ -94,7 +99,8 @@ const Services = () => {
            </div>
 
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-             {enhancedServices.map((service, index) => <div key={index} className="group bg-blue-50 p-6 sm:p-8 text-center rounded-lg hover:bg-blue-100 transition-all duration-300">
+             {enhancedServices.map((service, index) => (
+               <div key={index} className="group bg-blue-50 p-6 sm:p-8 text-center rounded-lg hover:bg-blue-100 transition-all duration-300">
                  <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-tech-primary mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg bg-[#0571d3]">
                    <div className="text-white scale-75 sm:scale-100">
                      {service.icon}
@@ -106,7 +112,8 @@ const Services = () => {
                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                    {service.description}
                  </p>
-               </div>)}
+               </div>
+             ))}
            </div>
          </div>
 
@@ -142,4 +149,5 @@ const Services = () => {
       </div>
     </section>;
 };
+
 export default Services;
