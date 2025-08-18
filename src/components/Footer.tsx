@@ -16,19 +16,19 @@ const Footer = () => {
     href: '#contatti'
   }];
   const socialLinks = [{
-    icon: <img src="/lovable-uploads/7f78d5b2-89a0-49b9-bfdf-07707170a593.png" alt="Instagram" className="h-5 w-5" />,
+    icon: <Instagram className="h-5 w-5" />,
     href: 'https://www.instagram.com/copia_digitale?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
     label: 'Instagram'
   }, {
-    icon: <img src="/lovable-uploads/498010d9-e28c-436d-bf1f-1fe9555f1a68.png" alt="LinkedIn" className="h-5 w-5" />,
+    icon: <Linkedin className="h-5 w-5" />,
     href: 'https://www.linkedin.com/company/copia-digitale/posts/?feedView=all',
     label: 'LinkedIn'
   }, {
-    icon: <img src="/lovable-uploads/7ebc044a-f0a3-47f6-80f6-e1611e1fca23.png" alt="YouTube" className="h-5 w-5" />,
+    icon: <Youtube className="h-5 w-5" />,
     href: 'https://youtube.com/@copia.digitale?si=4dc7SzZA1adA_z4m',
     label: 'YouTube'
   }, {
-    icon: <img src="/lovable-uploads/b64e03db-f2ca-43e2-8478-e982f047b541.png" alt="TikTok" className="h-5 w-5" />,
+    icon: <Music className="h-5 w-5" />,
     href: 'https://www.tiktok.com/@copia_digitale?_t=ZN-8ys7Rv0b6fO&_r=1',
     label: 'TikTok'
   }];
