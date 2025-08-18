@@ -1,4 +1,4 @@
-import { Camera, Globe, MapPin, Monitor, FileText, Video, Plane, Building } from 'lucide-react';
+import { Camera, Globe, MapPin, FileText, Video, Building } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const Services = () => {
@@ -13,7 +13,7 @@ const Services = () => {
     description: "Inseriamo le attività su Google Maps e Street View, con ottimizzazione local SEO per migliorare la visibilità e attrarre clienti reali.",
     gradient: "bg-primary"
   }, {
-    icon: <Monitor className="h-8 w-8" />,
+    icon: <img src="/lovable-uploads/071388d8-c18c-461c-8028-70a0ce953d82.png" alt="Siti Web Moderni" className="h-10 w-10" />,
     title: "Siti Web Moderni per la Tua Attività",
     description: "Realizziamo siti web veloci, belli e ottimizzati per la conversione. Soluzioni su misura per immobili, agenzie, hotel, cantieri nautici.",
     gradient: "bg-primary"
@@ -35,7 +35,7 @@ const Services = () => {
     description: "Siamo rivenditori autorizzati di laser scanner 3D dotati di tecnologia LiDAR. Perfetti per applicazioni in ambito architettonico, ingegneristico e real estate.",
     gradient: "bg-primary"
   }, {
-    icon: <Plane className="h-8 w-8" />,
+    icon: <img src="/lovable-uploads/020403d2-bd57-4f6a-950e-de5dc257ac74.png" alt="Ispezioni con Droni" className="h-10 w-10" />,
     title: "Ispezioni con Droni & Raccolta Dati",
     description: "Utilizziamo droni avanzati per effettuare rilievi e modellazioni 3D in ambienti industriali, anche pericolosi o difficili da raggiungere.",
     gradient: "bg-primary"
