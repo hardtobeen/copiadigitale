@@ -46,6 +46,13 @@ const Services = () => {
     gradient: "bg-primary"
   }];
 
+  const handleConsultationClick = () => {
+    const contactSection = document.getElementById('contatti');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return <section id="servizi" className="py-12 xs:py-16 sm:py-20 lg:py-24 xl:py-28 bg-white relative overflow-hidden">
        <div className="container mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 relative">
          <div className="text-center mb-10 xs:mb-12 sm:mb-16 lg:mb-20">
@@ -133,7 +140,10 @@ const Services = () => {
                   Realizza la tua copia digitale personalizzata e accelera il tuo business con soluzioni innovative
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                  <button className="group/btn text-tech-primary font-bold px-8 py-4 rounded-xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-base sm:text-lg min-w-[200px] text-gray-950 bg-[#0571d3]">
+                  <button 
+                    onClick={handleConsultationClick}
+                    className="group/btn text-tech-primary font-bold px-8 py-4 rounded-xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-base sm:text-lg min-w-[200px] text-gray-950 bg-[#0571d3]"
+                  >
                     <span className="flex items-center justify-center gap-2 text-base text-slate-50">
                       Richiedi consulenza gratuita
                       <svg className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
