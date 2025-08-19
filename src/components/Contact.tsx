@@ -157,8 +157,8 @@ const Contact = () => {
                    <Textarea name="message" placeholder="Descrivi il tuo progetto..." value={formData.message} onChange={handleChange} rows={4} className="bg-gray-50 border-gray-300 text-gray-900" />
                  </div>
 
-                 <button type="submit" className="w-full bg-tech-primary hover:bg-tech-secondary font-semibold py-3 px-6 rounded-lg transition-colors duration-300 flex items-center justify-center text-[#0571d3]">
-                   <Send className="mr-2 h-5 w-5" />
+                 <button type="submit" className="w-full bg-[#0571d3] hover:bg-[#0561c3] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 flex items-center justify-center">
+                   <Send className="mr-2 h-5 w-5 text-white" />
                    Invia richiesta
                  </button>
 
