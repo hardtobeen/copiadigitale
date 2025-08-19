@@ -1,4 +1,3 @@
-
 import { Facebook, Instagram, Linkedin, Youtube, Mail, Phone, MapPin, Music } from 'lucide-react';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -49,7 +48,7 @@ const Footer = () => {
             {/* Company Info */}
             <div className="space-y-4 sm:space-y-6">
               <div>
-                <h2 className="text-xl sm:text-2xl font-bold font-space-grotesk bg-gradient-neon bg-clip-text text-transparent mb-3 sm:mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold font-space-grotesk bg-gradient-neon bg-clip-text mb-3 sm:mb-4 text-slate-50">
                   Copiadigitale
                 </h2>
                 <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
@@ -129,7 +128,9 @@ const Footer = () => {
               <div>
                 <h4 className="text-xs sm:text-sm font-semibold mb-3 sm:mb-4">Seguici</h4>
                 <div className="flex space-x-3 sm:space-x-4">
-                  {socialLinks.map((social, index) => <a key={index} href={social.href} className="p-2 sm:p-3 rounded-lg hover:bg-gradient-digital transition-all duration-300 group" style={{backgroundColor: '#0571d3'}} aria-label={social.label}>
+                  {socialLinks.map((social, index) => <a key={index} href={social.href} className="p-2 sm:p-3 rounded-lg hover:bg-gradient-digital transition-all duration-300 group" style={{
+                  backgroundColor: '#0571d3'
+                }} aria-label={social.label}>
                       <div className="scale-90 sm:scale-100">
                         {social.icon}
                       </div>
