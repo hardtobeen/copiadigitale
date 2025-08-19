@@ -1,3 +1,4 @@
+
 import { Facebook, Instagram, Linkedin, Youtube, Mail, Phone, MapPin, Music } from 'lucide-react';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -64,8 +65,8 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center space-x-2 sm:space-x-3">
                   <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-digital-cyan flex-shrink-0" />
-                  <a href="tel:+390212345678" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">
-                    +39 02 1234 5678
+                  <a href="tel:+393482951909" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">
+                    +39 348 295 1909
                   </a>
                 </div>
                 <div className="flex items-center space-x-2 sm:space-x-3">

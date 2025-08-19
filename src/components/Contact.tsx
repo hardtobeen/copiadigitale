@@ -31,8 +31,8 @@ const Contact = () => {
   const contactInfo = [{
     icon: <Phone className="h-6 w-6" />,
     title: "Telefono",
-    value: "+39 02 1234 5678",
-    action: "tel:+390212345678"
+    value: "+39 348 295 1909",
+    action: "tel:+393482951909"
   }, {
     icon: <Mail className="h-6 w-6" />,
     title: "Email",
@@ -46,8 +46,8 @@ const Contact = () => {
   }, {
     icon: <MessageCircle className="h-6 w-6" />,
     title: "WhatsApp",
-    value: "+39 333 123 4567",
-    action: "https://wa.me/393331234567"
+    value: "+39 348 295 1909",
+    action: "https://wa.me/393482951909"
   }];
 
   return <section id="contatti" className="py-16 sm:py-20 bg-gray-900 text-white">
