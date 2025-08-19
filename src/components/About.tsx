@@ -7,7 +7,7 @@ const About = () => {
     description: "Utilizziamo tecnologie all'avanguardia per dare vita a progetti personalizzati su misura"
   }, {
     icon: <Users className="h-8 w-8" />,
-    title: "Collaborazione",
+    title: "Collaborazione", 
     description: "Lavoriamo a stretto contatto con i nostri clienti per comprendere e realizzare la loro visione."
   }, {
     icon: <Award className="h-8 w-8" />,
@@ -16,7 +16,7 @@ const About = () => {
   }, {
     icon: <Zap className="h-8 w-8" />,
     title: "Velocità",
-    description: "Tempi di consegna rapidi senza compromettere la qualità del risultato finale."
+    description: "Tempi di consegna rapidi garantendo la miglior qualità del risultato finale"
   }];
   return <section id="chi-siamo" className="py-12 xs:py-16 sm:py-20 lg:py-24 xl:py-28 bg-white relative overflow-hidden">
        <div className="container mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 relative">
