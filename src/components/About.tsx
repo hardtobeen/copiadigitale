@@ -4,7 +4,7 @@ const About = () => {
   const values = [{
     icon: <img src="/lovable-uploads/9e4a63c8-f3cf-4142-a0a7-0f4647a50def.png" alt="Innovazione" className="h-8 w-8" />,
     title: "Innovazione",
-    description: "Utilizziamo le tecnologie più avanzate per creare esperienze digitali che superano le aspettative."
+    description: "Utilizziamo tecnologie all'avanguardia per dare vita a progetti personalizzati su misura"
   }, {
     icon: <Users className="h-8 w-8" />,
     title: "Collaborazione",
