@@ -125,37 +125,21 @@ const Services = () => {
          </div>
 
           {/* CTA finale */}
-          <div className="text-center px-4">
-            <div className="relative overflow-hidden bg-gradient-to-br from-tech-primary via-digital-blue to-tech-secondary rounded-3xl px-8 sm:px-16 py-10 sm:py-12 shadow-2xl group hover:shadow-tech-primary/20 transition-all duration-500">
-              {/* Background pattern */}
-              <div className="absolute inset-0 bg-gradient-to-r from-white/5 to-transparent opacity-50 bg-[#6202d0]"></div>
-              <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full translate-y-12 -translate-x-12"></div>
-              
-              <div className="relative z-10">
-                <h3 className="font-bold text-xl sm:text-2xl leading-tight mb-4 font-space-grotesk text-slate-50 lg:text-4xl">
-                  Pronto a rivoluzionare la tua presenza online?
-                </h3>
-                <p className="text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-8 leading-relaxed text-slate-50">
-                  Realizza la tua copia digitale personalizzata e accelera il tuo business con soluzioni innovative
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                  <button 
-                    onClick={handleConsultationClick}
-                    className="group/btn text-tech-primary font-bold px-8 py-4 rounded-xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-base sm:text-lg min-w-[200px] text-gray-950 bg-[#0571d3]"
-                  >
-                    <span className="flex items-center justify-center gap-2 text-base text-slate-50">
-                      Richiedi consulenza gratuita
-                      <svg className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </span>
-                  </button>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
+         <div className="mt-12 sm:mt-16 text-center px-4">
+           <div className="bg-gradient-to-r from-tech-primary to-tech-secondary p-6 sm:p-8 rounded-xl text-white bg-[#0571d3]">
+             <h3 className="text-xl font-space-grotesk font-bold mb-3 sm:mb-4 sm:text-3xl">
+               Pronto a rivoluzionare la tua presenza online?
+             </h3>
+             <p className="text-base sm:text-lg mb-4 sm:mb-6 opacity-90">
+               Realizza la tua copia digitale personalizzata e accelera il tuo business
+             </p>
+             <button onClick={() => document.getElementById('contatti')?.scrollIntoView({
+            behavior: 'smooth'
+          })} className="bg-white text-tech-primary font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors duration-300 text-[#0571d3]">
+               Richiedi una consulenza
+             </button>
+           </div>
+         </div>
       </div>
     </section>;
 };
